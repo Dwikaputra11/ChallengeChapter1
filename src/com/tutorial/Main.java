@@ -102,6 +102,7 @@ public class Main {
                     break;
                 case "2":
                     volumeBalok();
+                    ulang = false;
                     break;
                 case "3":
                     volumeTabung();
@@ -151,6 +152,16 @@ public class Main {
         setInput("Tekan ENTER untuk kembali ke menu utama");
     }
 
+
+    // Amara Rumus Luas Persegi dan Lingkaran
+    public static void luasPersegi(){
+
+    }
+
+    public static void luasLingkaran(){
+
+    }
+
     // ---------------------------Menghitung Volume ---------------------------
 
     // Dwika Rumus Volume Balok dan Volume Tabung
@@ -184,5 +195,10 @@ public class Main {
         System.out.println("Volume dari Tabung adalah " + volume);
 
         setInput("Tekan ENTER untuk kembali ke menu utama");
+    }
+
+    // Ahmad Septiawan Rumus Volume Kubus
+    public static void volumeKubus(){
+
     }
 }
