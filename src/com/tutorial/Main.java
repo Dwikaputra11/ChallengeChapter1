@@ -60,10 +60,12 @@ public class Main {
 
             switch (input) {
                 case "1":
-
+                    luaspersegi();
+                    ulang = false;
                     break;
                 case "2":
-
+                    luasLingkaran();
+                    ulang = false;
                     break;
                 case "3":
                     luasSegitiga();
