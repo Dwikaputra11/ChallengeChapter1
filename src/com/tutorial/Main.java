@@ -60,10 +60,12 @@ public class Main {
 
             switch (input) {
                 case "1":
-
+                    luaspersegi();
+                    ulang = false;
                     break;
                 case "2":
-
+                    luasLingkaran();
+                    ulang = false;
                     break;
                 case "3":
                     luasSegitiga();
@@ -155,10 +157,34 @@ public class Main {
 
     // Amara Rumus Luas Persegi dan Lingkaran
     public static void luasPersegi(){
+         double luas;    
+        System.out.println ("----------------------------------");
+        System.out.println("Anda memilih persegi");
+        System.out.println("-----------------------------------");
+        var sisi1 = Double.valueOf(setInput("Masukkan sisi"));
+        var sisi2 = Double.valueOf(setInput("masukan sisi"));
+
+        double sisi = (double)input.nextInt()
+        luas = sisi * sisi;
+
+        System.out.println("Luas dari persegi adalah " + luas);
+        
+        setInput("Tekan ENTER untuk kembali ke menu utama");}
 
     }
 
     public static void luasLingkaran(){
+        double luas;    
+        System.out.println ("----------------------------------");
+        System.out.println("Anda memilih persegi");
+        System.out.println("-----------------------------------");
+        var jari-jari = Double.valueOf(setInput("Masukkan jari-jari"));
+
+        luas = 3.14*jari;
+
+        System.out.println("Luas dari lingkaran adalah " + luas);
+        
+        setInput("Tekan ENTER untuk kembali ke menu utama");}
 
     }
 
