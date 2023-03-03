@@ -59,26 +59,24 @@ public class Main {
             var input = setInput("Pilih");
 
             switch (input) {
-                case "1":
-
-                    break;
-                case "2":
-
-                    break;
-                case "3":
+                case "1" -> {
+                    luasPersegi();
+                    ulang = false;
+                }
+                case "2" -> {
+                    luasLingkaran();
+                    ulang = false;
+                }
+                case "3" -> {
                     luasSegitiga();
                     ulang = false;
-                    break;
-                case "4":
+                }
+                case "4" -> {
                     luasPersegiPanjang();
                     ulang = false;
-                    break;
-                case "0":
-                    ulang = false;
-                    break;
-                default:
-                    System.out.println("Pilihan tidak dimengerti");
-                    break;
+                }
+                case "0" -> ulang = false;
+                default -> System.out.println("Pilihan tidak dimengerti");
             }
         }
     }
@@ -97,23 +95,20 @@ public class Main {
             var input = setInput("Pilih");
 
             switch (input) {
-                case "1":
-
-                    break;
-                case "2":
+                case "1" -> {
+                    volumeKubus();
+                    ulang = false;
+                }
+                case "2" -> {
                     volumeBalok();
                     ulang = false;
-                    break;
-                case "3":
+                }
+                case "3" -> {
                     volumeTabung();
                     ulang = false;
-                    break;
-                case "0":
-                    ulang = false;
-                    break;
-                default:
-                    System.out.println("Pilihan tidak dimengerti");
-                    break;
+                }
+                case "0" -> ulang = false;
+                default -> System.out.println("Pilihan tidak dimengerti");
             }
         }
     }
@@ -155,11 +150,31 @@ public class Main {
 
     // Amara Rumus Luas Persegi dan Lingkaran
     public static void luasPersegi(){
+        double luas;
+        System.out.println ("----------------------------------");
+        System.out.println("Anda memilih persegi");
+        System.out.println("-----------------------------------");
+        var sisi = Double.valueOf(setInput("Masukan sisi"));
 
+        luas = sisi * sisi;
+
+        System.out.println("Luas dari persegi adalah " + luas);
+
+        setInput("Tekan ENTER untuk kembali ke menu utama");
     }
 
     public static void luasLingkaran(){
+        double luas;
+        System.out.println ("----------------------------------");
+        System.out.println("Anda memilih persegi");
+        System.out.println("-----------------------------------");
+        var jari = Double.valueOf(setInput("Masukkan jari-jari"));
 
+        luas = 3.14*jari;
+
+        System.out.println("Luas dari lingkaran adalah " + luas);
+
+        setInput("Tekan ENTER untuk kembali ke menu utama");
     }
 
     // ---------------------------Menghitung Volume ---------------------------
@@ -199,6 +214,16 @@ public class Main {
 
     // Ahmad Septiawan Rumus Volume Kubus
     public static void volumeKubus(){
+        double volume;
+        System.out.println("------------------------------------");
+        System.out.println("Anda memilih Kubus");
+        System.out.println("------------------------------------");
 
+        var sisi = Double.valueOf(setInput("Masukan sisi"));
+
+        volume = sisi*sisi*sisi;
+        System.out.println("Volume dari kubus adalah " + volume);
+
+        setInput("Tekan ENTER untuk kembali ke menu utama");
     }
 }
