@@ -9,11 +9,11 @@ public class Main {
 
     public static String setInput(String info) {
         System.out.print(info + " : " );
-        String data = input.nextLine();
-        return data;
+        return input.nextLine();
     }
 
     public static void menuUtama() {
+        label:
         while (true) {
             System.out.println("------------------------------------");
             System.out.println("Kalkulator Penghitung Luas dan Volum");
@@ -26,14 +26,18 @@ public class Main {
 
             var input = setInput("Pilih");
 
-            if(input.equals("1")) {
-                luas();
-            } else if(input.equals("2")){
-                volume();
-            } else if(input.equals("0")){
-                break;
-            } else {
-                System.out.println("Pilihan tidak dimengerti");
+            switch (input) {
+                case "1":
+                    luas();
+                    break;
+                case "2":
+                    volume();
+                    break;
+                case "0":
+                    break label;
+                default:
+                    System.out.println("Pilihan tidak dimengerti");
+                    break;
             }
             System.out.println("\n\n");
 
@@ -54,20 +58,27 @@ public class Main {
 
             var input = setInput("Pilih");
 
-            if(input.equals("1")) {
+            switch (input) {
+                case "1":
 
-            } else if(input.equals("2")){
+                    break;
+                case "2":
 
-            } else if(input.equals("3")){
-                luasSegitiga();
-                ulang = false;
-            } else if(input.equals("4")){
-                luasPersegiPanjang();
-                ulang = false;
-            } else if(input.equals("0")){
-                ulang = false;
-            } else {
-                System.out.println("Pilihan tidak dimengerti");
+                    break;
+                case "3":
+                    luasSegitiga();
+                    ulang = false;
+                    break;
+                case "4":
+                    luasPersegiPanjang();
+                    ulang = false;
+                    break;
+                case "0":
+                    ulang = false;
+                    break;
+                default:
+                    System.out.println("Pilihan tidak dimengerti");
+                    break;
             }
         }
     }
@@ -85,17 +96,23 @@ public class Main {
 
             var input = setInput("Pilih");
 
-            if(input.equals("1")) {
+            switch (input) {
+                case "1":
 
-            } else if(input.equals("2")){
-                volumeBalok();
-            } else if(input.equals("3")){
-                volumeTabung();
-                ulang = false;
-            } else if(input.equals("0")){
-                ulang = false;
-            } else {
-                System.out.println("Pilihan tidak dimengerti");
+                    break;
+                case "2":
+                    volumeBalok();
+                    break;
+                case "3":
+                    volumeTabung();
+                    ulang = false;
+                    break;
+                case "0":
+                    ulang = false;
+                    break;
+                default:
+                    System.out.println("Pilihan tidak dimengerti");
+                    break;
             }
         }
     }
