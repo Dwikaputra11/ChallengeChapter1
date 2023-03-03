@@ -98,7 +98,8 @@ public class Main {
 
             switch (input) {
                 case "1":
-
+                    volumeKubus();
+                    ulang = false;
                     break;
                 case "2":
                     volumeBalok();
@@ -199,6 +200,16 @@ public class Main {
 
     // Ahmad Septiawan Rumus Volume Kubus
     public static void volumeKubus(){
+        double volume;
+        System.out.println("------------------------------------");
+        System.out.println("Anda memilih Kubus");
+        System.out.println("------------------------------------");
 
+        var sisi = Double.valueOf(setInput("Masukan sisi"));
+
+        volume = sisi*sisi*sisi;
+        System.out.println("Volume dari kubus adalah " + volume);
+
+        setInput("Tekan ENTER untuk kembali ke menu utama");
     }
 }
