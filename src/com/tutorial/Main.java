@@ -155,7 +155,8 @@ public class Main {
 
     // Amara Rumus Luas Persegi dan Lingkaran
     public static void luasPersegi(){
-         double luas;    System.out.println ("----------------------------------");
+         double luas;    
+        System.out.println ("----------------------------------");
         System.out.println("Anda memilih persegi");
         System.out.println("-----------------------------------");
         var sisi1 = Double.valueOf(setInput("Masukkan sisi"));
@@ -171,7 +172,8 @@ public class Main {
     }
 
     public static void luasLingkaran(){
-        double luas;    System.out.println ("----------------------------------");
+        double luas;    
+        System.out.println ("----------------------------------");
         System.out.println("Anda memilih persegi");
         System.out.println("-----------------------------------");
         var jari-jari = Double.valueOf(setInput("Masukkan jari-jari"));
